@@ -33,7 +33,7 @@ nano /etc/ssh/sshd_config
 ---
 
 ### **4️⃣ Paste This Configuration in nano File**
-After pasting, press **CTRL + X**, then **Y**, then **Enter**.
+After pasting, press **CTRL + X**, then **Y**, then **Enter** to save.
 
 ```plaintext
 # This is the sshd server system-wide configuration file.  See
@@ -167,8 +167,8 @@ sudo passwd
 
 ---
 ## **All done ✅**
-#### If your username was Ubuntu change it to root.
-#### Remove the SSH key and use the new passwd set by you.
+#### If your username was ubuntu change it to root.
+#### Remove the ssh key 🗝 and use the passwd set by you.
 ---
 
 ## ⚠️ Security Warning
