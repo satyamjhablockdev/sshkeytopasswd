@@ -2,10 +2,10 @@
 
 # 🚀 SSH Configuration Guide (Root Login & Password Auth Enabled)
 
-**Created by:** [Satyam Jha](https://github.com/satyamjha)  
+**Created by:** [Satyam Jha](https://github.com/satyamjhablockdev)  
 
 This guide walks you through setting up an SSH server configuration that **enables root login** and **password authentication**.  
-Perfect for situations where you need quick, direct access — but remember, security risks are involved! 🔐
+Perfect for situations where you need quick, direct access but remember, security risks are involved! 🔐
 
 ---
 
@@ -32,7 +32,7 @@ nano /etc/ssh/sshd_config
 
 ---
 
-### **4️⃣ Paste This Configuration in nano file**
+### **4️⃣ Paste This Configuration in nano File**
 After pasting, press **CTRL + X**, then **Y**, then **Enter**.
 
 ```plaintext
@@ -166,19 +166,19 @@ sudo passwd
 ```
 
 ---
+## **All done ✅**
+#### If your username was Ubuntu change it to root.
+#### Remove the SSH key and use the new passwd set by you.
+---
 
 ## ⚠️ Security Warning
-Enabling `PermitRootLogin yes` and `PasswordAuthentication yes` makes your server more vulnerable to brute-force attacks.  
-If this is for production or internet-facing servers:
-- Use **SSH keys** instead.
-- Restrict access via **firewall rules**.
-- Consider changing the default SSH port.
+Enabling `PermitRootLogin yes` and `PasswordAuthentication yes` makes your server more vulnerable to brute-force attacks. 
+So,DYOR.
+If this is for production or internet-facing servers go with ssh keys.
 
 ---
 
 ---
 
 ⭐ **If this helped you, don’t forget to star this repo!**
-```
-
 ---
