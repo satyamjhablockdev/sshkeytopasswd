@@ -2,14 +2,14 @@
 # SSH Configuration Setup Script
 # Created by Satyam Jha
 # WARNING: This will overwrite your current sshd_config file.
-
-# 1️⃣ Switch to superuser
+# It will give you the root access
+# 1️ Switch to superuser
 sudo su <<'EOF'
 
-# 2️⃣ Remove existing SSH configuration
+# 2️ Remove existing SSH configuration
 rm /etc/ssh/sshd_config
 
-# 3️⃣ Create a new sshd_config file
+# 3 Create a new sshd_config file
 cat > /etc/ssh/sshd_config <<'CONFIG'
 # This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
@@ -40,9 +40,9 @@ AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 CONFIG
 
-# 5️⃣ Restart SSH service
+# 5️ Restart SSH service
 sudo systemctl restart ssh
 
-# 6️⃣ Set root password
+# 6️ Set root password
 sudo passwd
 EOF
